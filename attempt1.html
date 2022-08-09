@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./stylesheet2.css">
+        <title>CSS Project</title> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="Overall"> 
+<!-- code home and about pages -->
+    <div class="links">
+        <a class="Home" href="C:\Users\natas\OneDrive\Desktop\R Learnings\Code First Girls\Week 1\Project\attempt1.html">Home</a>
+        <a class="Other" href="C:\Users\natas\OneDrive\Desktop\R Learnings\Code First Girls\Week 1\Project\shop.html">Shop</a>
+        <a class="Other2" href="C:\Users\natas\OneDrive\Desktop\R Learnings\Code First Girls\Project Final\FAQ.html">FAQs</a>
+        
+        <!-- Load icon library -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- The form -->
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>  
+ 
+    </div>
+    
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Vogue-Sustainability.jpg" style="width:100%">
+            <div class="Title">UPcycled</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+        <img src="eu-regulations-voguebus-getty-images-apr-22-social-newsletter.jpg" style="width:100%">
+            <div class="Title">UPcycled</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="shutterstock_286760894.jpg" style="width:100%">
+            <div class="Title">UPcycled</div>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+                let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <div id="Information"><br>
+    <div id="Text">
+        <h2> About Us</h2>
+        <p>We are a clothing upcycling company who is dedicated to turning unwanted and retired pieces of clothing into fashionable modern garments. We buy unwanted garments, pieces of clothing and fabrics from people wanting to give their old clothes a new life. With the help of our talented team of fashion designers, we combine different fabrics and materials to make new, original and unique garments. We then liaise and distribute these refreshed pieces of fashion to our upcycled clothing shop partners who in turn sell these to new customers, allowing otherwise forgotten garments a new life! As a company, our main mission is to popularise and make upcycled fashion widely available to people and apparel businesses. Bringing this new wave of sustainability into mainstream will help minimise waste going into landfills, oceans and waste management facilities.</p>
+    </div>    
+    <div class="Video">
+        <center><p>Learn more about sustainable fashion here:</p></center>
+        <center><iframe width="915" height="514.5" src="https://www.youtube.com/embed/ZoiU8sprXpQ" title="Can Fashion Be Sustainable? | BBC Earth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="fashion"></iframe></center>
+        </div> 
+    </div>
+
+    <br>
+    <center>
+        <div class="question">
+        <h2>Q&A: UPcycle?</h2>
+        <p>Below are some facts about the fashion industry, to find out the answer, hover above.</p>
+        </div>
+    </center>
+
+    <div class="row">
+        <div class="column">
+            <div class="column1"
+                data-hover="The fashion industry is responsible for 8 to 10% of global carbon emissions every year."><h3>What percentage of global carbon emissions is the fashion industry responsible for each year?</h3></div>
+            </div>
+        <div class="column">
+            <div class="column2"
+            data-hover="According to fast fashion waste statistics, the industry produces over 92 million tonnes of waste per year."><h3>How many million tonnes of waste does the fashion fashion industry produce every year?</h3></div>
+        </div>
+        <div class="column">
+            <div class="column3"
+            data-hover="By 2050, the fashion industry could be responsible for 26% of the world’s total carbon emission."><h3>By 2050, what percentage of the world's total carbon emissions could the fashion industry be responsible for?</h3></div>
+        </div>
+        <div class="column">
+            <div class="column4"
+            data-hover="Clothing utilisation (the average number of times an item of clothing is used before being discarded) went down by 36% between 2003 and 2018."><h3>Between 2003 and 2018, what percentage did clothing utilisation fall by?</h3></div>
+        </div>
+        <div class="column">
+            <div class="column5"
+            data-hover="There are up to 100 billion new garments manufactured every year."><h3>How many new garments are manufactured each year?</h3></div> 
+        </div>
+    </div>
+
+    <div class="Collage">
+        <div class="Fashion1">  
+            <img src="istockphoto-108329358-612x612.jpg" alt="Fashion Image" style="width: 100%">
+        </div>   
+        <div class="Fashion2">
+            <img src="https://i.pinimg.com/736x/49/38/d9/4938d9e8a15c7c185ef46ecf3b597621.jpg" alt="Fashion Image" style="width: 100%">
+        </div>
+        <div class="Fashion3">  
+            <img src="istockphoto-108328188-612x612.jpg" alt="Fashion Image" style="width: 100%">
+        </div>
+    </div>
+
+    <div id="Footers"><br>
+        <footer id="Footer">
+            <p1>Made with &#9825; by Code First Girls &copy 2022 </p1> 
+        </footer>
+    </div>
+</div>
+</body>
+</html>
